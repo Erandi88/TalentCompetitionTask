@@ -37,3 +37,23 @@ C:\Talent-Competition\Talent\Talent.Services.Profile\obj\Debug\netcoreapp2.0\Tal
 C:\Talent-Competition\Talent\Talent.Services.Profile\obj\Debug\netcoreapp2.0\Talent.Services.Profile.AssemblyInfo.cs
 C:\Talent-Competition\Talent\Talent.Services.Profile\obj\Debug\netcoreapp2.0\Talent.Services.Profile.dll
 C:\Talent-Competition\Talent\Talent.Services.Profile\obj\Debug\netcoreapp2.0\Talent.Services.Profile.pdb
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\bin\Debug\netcoreapp2.0\appsettings.Development.json
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\bin\Debug\netcoreapp2.0\appsettings.docker.Development.json
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\bin\Debug\netcoreapp2.0\appsettings.docker.json
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\bin\Debug\netcoreapp2.0\appsettings.json
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\bin\Debug\netcoreapp2.0\Talent.Services.Profile.deps.json
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\bin\Debug\netcoreapp2.0\Talent.Services.Profile.runtimeconfig.json
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\bin\Debug\netcoreapp2.0\Talent.Services.Profile.runtimeconfig.dev.json
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\bin\Debug\netcoreapp2.0\Talent.Services.Profile.dll
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\bin\Debug\netcoreapp2.0\Talent.Services.Profile.pdb
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\bin\Debug\netcoreapp2.0\Talent.Common.dll
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\bin\Debug\netcoreapp2.0\Talent.Common.pdb
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\obj\Debug\netcoreapp2.0\Talent.Services.Profile.csproj.AssemblyReference.cache
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\obj\Debug\netcoreapp2.0\Talent.Services.Profile.GeneratedMSBuildEditorConfig.editorconfig
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\obj\Debug\netcoreapp2.0\Talent.Services.Profile.AssemblyInfoInputs.cache
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\obj\Debug\netcoreapp2.0\Talent.Services.Profile.AssemblyInfo.cs
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\obj\Debug\netcoreapp2.0\Talent.Services.Profile.csproj.CoreCompileInputs.cache
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\obj\Debug\netcoreapp2.0\Talent.Services.Profile.csproj.CopyComplete
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\obj\Debug\netcoreapp2.0\Talent.Services.Profile.dll
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\obj\Debug\netcoreapp2.0\Talent.Services.Profile.pdb
+E:\Industry Connect\Repo\talent-competition\Talent.Services.Profile\obj\Debug\netcoreapp2.0\Talent.Services.Profile.genruntimeconfig.cache

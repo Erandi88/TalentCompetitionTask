@@ -5,15 +5,15 @@ import LoggedInBanner from '../../Layout/Banner/LoggedInBanner.jsx';
 import { LoggedInNavigation } from '../../Layout/LoggedInNavigation.jsx';
 import { JobSummaryCard } from './JobSummaryCard.jsx';
 import { BodyWrapper, loaderData } from '../../Layout/BodyWrapper.jsx';
-import { Pagination, Icon, Dropdown, Checkbox, Accordion, Form, Segment } from 'semantic-ui-react';
+import { Container, Pagination, Icon, Dropdown, Checkbox, Accordion, Form, Segment } from 'semantic-ui-react';
 
 export default class ManageJob extends React.Component {
     constructor(props) {
         super(props);
-        let loader = loaderData
+        let loader = loaderData;
         loader.allowedUsers.push("Employer");
         loader.allowedUsers.push("Recruiter");
-        //console.log(loader)
+        //console.log(loader);
         this.state = {
             loadJobs: [],
             loaderData: loader,
@@ -34,20 +34,23 @@ export default class ManageJob extends React.Component {
         this.loadData = this.loadData.bind(this);
         this.init = this.init.bind(this);
         this.loadNewData = this.loadNewData.bind(this);
+        this.handlePaginationChange = this.handlePaginationChange.bind(this);
         //your functions go here
     };
 
+
     init() {
+
         let loaderData = TalentUtil.deepCopy(this.state.loaderData)
-        loaderData.isLoading = false;
+        //loaderData.isLoading = false;
         this.setState({ loaderData });//comment this
+        loaderData.isLoading = false;
 
         //set loaderData.isLoading to false after getting data
-        //this.loadData(() =>
-        //    this.setState({ loaderData })
-        //)
-        
-        //console.log(this.state.loaderData)
+        this.loadData(() =>
+            this.setState({ loaderData })
+        )
+
     }
 
     componentDidMount() {
@@ -55,9 +58,37 @@ export default class ManageJob extends React.Component {
     };
 
     loadData(callback) {
-        var link = 'http://localhost:51689/listing/listing/getSortedEmployerJobs';
+        //var link = 'http://localhost:51689/listing/listing/getSortedEmployerJobs/';
+        var link = 'https://app-talent-competition-1.azurewebsites.net/listing/listing/getSortedEmployerJobs/';
         var cookies = Cookies.get('talentAuthToken');
-       // your ajax call and other logic goes here
+        // your ajax call and other logic goes here
+        $.ajax({
+            url: link,
+            headers: {
+                'Authorization': 'Bearer ' + cookies,
+                'Content-Type': 'application/json'
+            },
+            type: "GET",
+            contentType: "application/json",
+            data: {
+                activePage: this.state.activePage,
+                sortbyDate: this.state.sortBy.date,
+                showActive: this.state.filter.showActive,
+                showClosed: this.state.filter.showClosed,
+                showDraft: this.state.filter.showDraft,
+                showExpired: this.state.filter.showExpired,
+                showUnexpired: this.state.filter.showUnexpired,
+            },
+            dataType: "json",
+            success: function (res) {
+                console.log(res);
+                this.setState({ loadJobs: res.myJobs, totalPages: Math.ceil(res.totalCount / 6) });
+                //console.log(res);              
+            }.bind(this),
+            error: function (res) {
+                //console.log(res.message);                    
+            }
+        })
     }
 
     loadNewData(data) {
@@ -74,11 +105,37 @@ export default class ManageJob extends React.Component {
         });
     }
 
+    handlePaginationChange(element, data) {
+        let newdata = JSON.parse(JSON.stringify(this.state));
+        newdata['activePage'] = data.activePage;
+        this.setState({
+            activePage: [...this.state.activePage, data.activePage]
+        });
+        this.loadNewData(newdata);
+    }
+
     render() {
         return (
-            <BodyWrapper reload={this.init} loaderData={this.state.loaderData}>
-               <div className ="ui container">Your table goes here</div>
-            </BodyWrapper>
+            <React.Fragment>
+                <BodyWrapper reload={this.init} loaderData={this.state.loaderData}>
+                    <div className="ui container"><h1>List of Jobs</h1>
+                        <div className="ui container"><Icon name='filter' />Filter: <Dropdown text='Choose filter' inline dropdown /> <Icon name='calendar' />Sort by date: <Dropdown text='Newest First' inline dropdown />  </div>
+                        <JobSummaryCard jobs={this.state.loadJobs} />
+                    </div>
+                    <div className="talent-pagination">
+                        <Container textAlign='center'>
+                            <Pagination
+                                ActivePage={this.state.activePage}
+                                boundaryRange={0}
+                                siblingRange={2}
+                                totalPages={this.state.totalPages}
+                                onPageChange={this.handlePaginationChange}
+                            />
+                        </Container>
+
+                    </div>
+                </BodyWrapper>
+            </React.Fragment>
         )
     }
 }

@@ -69,7 +69,8 @@ export default class AccountProfile extends React.Component {
     loadData() {
         var cookies = Cookies.get('talentAuthToken');
         $.ajax({
-            url: 'http://localhost:60290/profile/profile/getTalentProfile',
+            //url: 'http://localhost:60290/profile/profile/getTalentProfile',
+            url: 'https://app-talent-competition-1.azurewebsites.net/profile/profile/getTalentProfile',
             headers: {
                 'Authorization': 'Bearer ' + cookies,
                 'Content-Type': 'application/json'
