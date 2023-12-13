@@ -1,0 +1,16 @@
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\bin\Release\netcoreapp2.0\appsettings.Development.json
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\bin\Release\netcoreapp2.0\appsettings.json
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\bin\Release\netcoreapp2.0\bundleconfig.json
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\bin\Release\netcoreapp2.0\Talent.App.WebApp.deps.json
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\bin\Release\netcoreapp2.0\Talent.App.WebApp.runtimeconfig.json
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\bin\Release\netcoreapp2.0\Talent.App.WebApp.runtimeconfig.dev.json
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\bin\Release\netcoreapp2.0\Talent.App.WebApp.dll
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\bin\Release\netcoreapp2.0\Talent.App.WebApp.pdb
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\obj\Release\netcoreapp2.0\Talent.App.WebApp.csproj.AssemblyReference.cache
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\obj\Release\netcoreapp2.0\Talent.App.WebApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\obj\Release\netcoreapp2.0\Talent.App.WebApp.AssemblyInfoInputs.cache
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\obj\Release\netcoreapp2.0\Talent.App.WebApp.AssemblyInfo.cs
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\obj\Release\netcoreapp2.0\Talent.App.WebApp.csproj.CoreCompileInputs.cache
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\obj\Release\netcoreapp2.0\Talent.App.WebApp.dll
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\obj\Release\netcoreapp2.0\Talent.App.WebApp.pdb
+E:\Industry Connect\Repo\talent-competition\App\Talent.App.WebApp\obj\Release\netcoreapp2.0\Talent.App.WebApp.genruntimeconfig.cache

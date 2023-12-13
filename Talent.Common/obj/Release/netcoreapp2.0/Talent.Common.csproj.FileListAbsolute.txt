@@ -1,0 +1,10 @@
+E:\Industry Connect\Repo\talent-competition\Talent.Common\bin\Release\netcoreapp2.0\Talent.Common.deps.json
+E:\Industry Connect\Repo\talent-competition\Talent.Common\bin\Release\netcoreapp2.0\Talent.Common.dll
+E:\Industry Connect\Repo\talent-competition\Talent.Common\bin\Release\netcoreapp2.0\Talent.Common.pdb
+E:\Industry Connect\Repo\talent-competition\Talent.Common\obj\Release\netcoreapp2.0\Talent.Common.csproj.AssemblyReference.cache
+E:\Industry Connect\Repo\talent-competition\Talent.Common\obj\Release\netcoreapp2.0\Talent.Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\Industry Connect\Repo\talent-competition\Talent.Common\obj\Release\netcoreapp2.0\Talent.Common.AssemblyInfoInputs.cache
+E:\Industry Connect\Repo\talent-competition\Talent.Common\obj\Release\netcoreapp2.0\Talent.Common.AssemblyInfo.cs
+E:\Industry Connect\Repo\talent-competition\Talent.Common\obj\Release\netcoreapp2.0\Talent.Common.csproj.CoreCompileInputs.cache
+E:\Industry Connect\Repo\talent-competition\Talent.Common\obj\Release\netcoreapp2.0\Talent.Common.dll
+E:\Industry Connect\Repo\talent-competition\Talent.Common\obj\Release\netcoreapp2.0\Talent.Common.pdb
