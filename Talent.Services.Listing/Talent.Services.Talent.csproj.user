@@ -2,6 +2,6 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
-    <NameOfLastUsedPublishProfile>E:\Industry Connect\Repo\talent-competition\Talent.Services.Listing\Properties\PublishProfiles\TalentServiceTalentListingCompetition - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>E:\Industry Connect\Repo\talent-competition\Talent.Services.Listing\Properties\PublishProfiles\TalentServiceTalentListingCompetitions - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

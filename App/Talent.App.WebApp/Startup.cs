@@ -22,6 +22,7 @@ namespace Talent.App.WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +40,10 @@ namespace Talent.App.WebApp
 
             app.UseStaticFiles();
 
+            
+
+
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -47,6 +52,8 @@ namespace Talent.App.WebApp
                     new { controller = "Home", action = "index" }
                 );
             });
+
+
         }
     }
 }

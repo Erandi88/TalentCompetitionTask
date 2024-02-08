@@ -70,7 +70,7 @@ export default class AccountProfile extends React.Component {
         var cookies = Cookies.get('talentAuthToken');
         $.ajax({
             //url: 'http://localhost:60290/profile/profile/getTalentProfile',
-            url: 'https://talentserviceprofilecompetition.azurewebsites.net/profile/profile/getTalentProfile',
+            url: 'https://talentserviceprofilecompetitions.azurewebsites.net/profile/profile/getTalentProfile',
             headers: {
                 'Authorization': 'Bearer ' + cookies,
                 'Content-Type': 'application/json'
@@ -106,7 +106,7 @@ export default class AccountProfile extends React.Component {
         var cookies = Cookies.get('talentAuthToken');
         $.ajax({
             //url: 'http://localhost:60290/profile/profile/updateTalentProfile',
-            url: 'https://talentserviceprofilecompetition.azurewebsites.net/profile/profile/updateTalentProfile',
+            url: 'https://talentserviceprofilecompetitions.azurewebsites.net/profile/profile/updateTalentProfile',
 
             headers: {
                 'Authorization': 'Bearer ' + cookies,
@@ -258,7 +258,8 @@ export default class AccountProfile extends React.Component {
                                             <PhotoUpload
                                                 imageId={this.state.profileData.profilePhotoUrl}
                                                 updateProfileData={this.updateWithoutSave}
-                                                savePhotoUrl='http://localhost:60290/profile/profile/updateProfilePhoto'
+                                                //savePhotoUrl='http://localhost:60290/profile/profile/updateProfilePhoto'
+                                                savePhotoUrl='https://talentserviceprofilecompetitions.azurewebsites.net/profile/profile/updateProfilePhoto'
                                             />
                                         </FormItemWrapper>
                                         <FormItemWrapper
@@ -269,7 +270,8 @@ export default class AccountProfile extends React.Component {
                                             <VideoUpload
                                                 videoName={this.state.profileData.videoName}
                                                 updateProfileData={this.updateWithoutSave}
-                                                saveVideoUrl={'http://localhost:60290/profile/profile/updateTalentVideo'}
+                                               // saveVideoUrl={'http://localhost:60290/profile/profile/updateTalentVideo'}
+                                                saveVideoUrl={'https://talentserviceprofilecompetitions.azurewebsites.net/profile/profile/updateTalentVideo'}
                                             />
                                         </FormItemWrapper>
                                         <FormItemWrapper
@@ -281,7 +283,8 @@ export default class AccountProfile extends React.Component {
                                                 cvName={this.state.profileData.cvName}
                                                 cvUrl={this.state.profileData.cvUrl}
                                                 updateProfileData={this.updateWithoutSave}
-                                                saveCVUrl={'http://localhost:60290/profile/profile/updateTalentCV'}
+                                                //saveCVUrl={'http://localhost:60290/profile/profile/updateTalentCV'}
+                                                saveCVUrl={'https://talentserviceprofilecompetitions.azurewebsites.net/profile/profile/updateTalentCV'}
                                             />
                                         </FormItemWrapper>
                                         <SelfIntroduction
