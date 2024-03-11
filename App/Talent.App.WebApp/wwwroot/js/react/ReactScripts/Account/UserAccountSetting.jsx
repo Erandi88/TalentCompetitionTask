@@ -128,8 +128,8 @@ export default class UserAccountSetting extends React.Component {
     getUserRole() {
         const cookies = Cookies.get('talentAuthToken');
         $.ajax({
-            url: 'http://localhost:60998/authentication/authentication/getAccountSettingInfo',
-            //url: 'https://talentserviceidentitycompetitions.azurewebsites.net/authentication/authentication/getAccountSettingInfo',
+            //url: 'http://localhost:60998/authentication/authentication/getAccountSettingInfo',
+            url: 'https://talentserviceidentitycompetitions.azurewebsites.net/authentication/authentication/getAccountSettingInfo',
             type: 'GET',
             headers: {
                 'Authorization': 'Bearer ' + cookies,
