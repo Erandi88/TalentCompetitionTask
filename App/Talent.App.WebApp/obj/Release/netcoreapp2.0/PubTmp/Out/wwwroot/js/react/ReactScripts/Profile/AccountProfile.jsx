@@ -270,7 +270,7 @@ export default class AccountProfile extends React.Component {
                                             <VideoUpload
                                                 videoName={this.state.profileData.videoName}
                                                 updateProfileData={this.updateWithoutSave}
-                                               // saveVideoUrl={'http://localhost:60290/profile/profile/updateTalentVideo'}
+                                               //saveVideoUrl={'http://localhost:60290/profile/profile/updateTalentVideo'}
                                                 saveVideoUrl={'https://talentserviceprofilecompetitions.azurewebsites.net/profile/profile/updateTalentVideo'}
                                             />
                                         </FormItemWrapper>

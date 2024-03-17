@@ -106,7 +106,7 @@ export default class AccountProfile extends React.Component {
         var cookies = Cookies.get('talentAuthToken');
         $.ajax({
             //url: 'http://localhost:60290/profile/profile/updateTalentProfile',
-            url: 'https://talentserviceprofilecompetitions.azurewebsites.net/profile/profile/updateTalentProfile',
+           url: 'https://talentserviceprofilecompetitions.azurewebsites.net/profile/profile/updateTalentProfile',
 
             headers: {
                 'Authorization': 'Bearer ' + cookies,
@@ -284,7 +284,7 @@ export default class AccountProfile extends React.Component {
                                                 cvUrl={this.state.profileData.cvUrl}
                                                 updateProfileData={this.updateWithoutSave}
                                                 //saveCVUrl={'http://localhost:60290/profile/profile/updateTalentCV'}
-                                                saveCVUrl={'https://talentserviceprofilecompetitions.azurewebsites.net/profile/profile/updateTalentCV'}
+                                               saveCVUrl={'https://talentserviceprofilecompetitions.azurewebsites.net/profile/profile/updateTalentCV'}
                                             />
                                         </FormItemWrapper>
                                         <SelfIntroduction

@@ -1,16 +1,14 @@
 ﻿import React from 'react';
 import Cookies from 'js-cookie';
-import { Container, Pagination, Label, Card, Popup, Button, Icon } from 'semantic-ui-react';
+import { Container, Label, Card, Button, Icon } from 'semantic-ui-react';
 import moment from 'moment';
 
 export class JobSummaryCard extends React.Component {
-   constructor(props) {
+    constructor(props) {
         super(props);
-        this.selectJob = this.selectJob.bind(this)
-
+        this.selectJob = this.selectJob.bind(this);
     }
 
-    //Request for closing a job
     selectJob(id) {
         try {
             const cookies = Cookies.get('talentAuthToken');
@@ -38,10 +36,7 @@ export class JobSummaryCard extends React.Component {
         }
     }
 
-   
-
-    renderJobCards() {
-        const { jobs } = this.props;
+    renderJobCards(jobs) {
         return jobs.map((job, id) => (
             <Card key={id}
                 header={
@@ -78,17 +73,16 @@ export class JobSummaryCard extends React.Component {
 
         return (
             <React.Fragment>
-                <div className="ui container">
+                <Container>
                     {jobs.length > 0 ? (
                         <Card.Group itemsPerRow={3} doubling={true}>
-                            {this.renderJobCards()}
+                            {this.renderJobCards(jobs)}
                         </Card.Group>
                     ) : (
                         this.renderEmptyContent()
                     )}
-                </div>
+                </Container>
             </React.Fragment>
         );
     }
-
 }

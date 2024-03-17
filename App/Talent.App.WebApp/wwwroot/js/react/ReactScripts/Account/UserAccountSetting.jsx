@@ -52,7 +52,7 @@ export default class UserAccountSetting extends React.Component {
         const cookies = Cookies.get('talentAuthToken');
         if (field == "name") {            
             $.ajax({
-                //url: 'http://localhost:60998/authentication/authentication/changeUserName?userName=' + this.state.userName,
+               // url: 'http://localhost:60998/authentication/authentication/changeUserName?userName=' + this.state.userName,
                 url: 'https://talentserviceidentitycompetitions.azurewebsites.net/authentication/authentication/changeUserName?userName=' + this.state.userName,
                 type: 'POST',
                 headers: {
@@ -106,7 +106,7 @@ export default class UserAccountSetting extends React.Component {
         }
         if (field == "deactivate") {
             $.ajax({
-                //url: 'http://localhost:60998/authentication/authentication/deactivateAccount',
+               // url: 'http://localhost:60998/authentication/authentication/deactivateAccount',
                 url: 'https://talentserviceidentitycompetitions.azurewebsites.net/authentication/authentication/deactivateAccount',
                 type: "POST",
                 headers: {

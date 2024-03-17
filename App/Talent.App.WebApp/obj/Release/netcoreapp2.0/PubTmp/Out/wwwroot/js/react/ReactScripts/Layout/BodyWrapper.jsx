@@ -3,6 +3,7 @@ import AuthenticatingBanner from '../Layout/Banner/AuthenticatingBanner.jsx';
 import { LoggedInNavigation } from '../Layout/LoggedInNavigation.jsx';
 import propTypes from 'prop-types'
 
+
 export const loaderData = {
     isLoading: true,
     allowedUsers: []
@@ -34,7 +35,9 @@ export class BodyWrapper extends React.Component {
     }
 
     render() {
+        console.log('Children:', this.props.children);
         let children = this.props.children;
+        //let { children } = this.props;
         let isLoading = this.props.loaderData.isLoading;
         let reload = this.props.reload;
         let err = this.state.err
